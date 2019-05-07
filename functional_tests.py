@@ -7,7 +7,7 @@ browser = webdriver.Firefox()
 browser.get('http://localhost:8000')
 
 # He notices the page title and header mention to-do lists
-assert 'To-Do' in browser.title
+assert 'To-Do' in browser.title, "Browser title was "+ browser.title
 
 # He is invited to enter a to-do item straight away
 
